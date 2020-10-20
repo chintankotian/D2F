@@ -1,5 +1,5 @@
-# D2F
-## A project to explore the use of transfer learning in  GANs to produce photo realistic images of human faces from its description
+# D2F -  Description to Face Synthesis 
+### A project to explore the use of transfer learning in  GANs to produce photo realistic images of human faces from its description
 ### Project breakdown
 - [ ] Data preprocessing(effecient way to load/use the entire LFW data onto the main memory)
 - [ ] Language Model
@@ -8,7 +8,7 @@
 - [ ] Final Model
 - [ ] Accuracy Measure 
 
-#### Data preprocessing(effecient way to load/use the entire LFW data onto the main memory)
+### Data preprocessing(effecient way to load/use the entire LFW data onto the main memory)
 Requirement of the Data preprocessing code
 * Modular
 * Should work on atleast 2 levels of folder structure
