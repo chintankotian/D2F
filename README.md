@@ -1,7 +1,7 @@
 # D2F -  Description to Face Synthesis 
 ### A project to explore the use of transfer learning in  GANs to produce photo realistic images of human faces from its description
 ### Project breakdown
-- [ x ] Data preprocessing(effecient way to load/use the entire Celeb-A data onto the main memory)
+- [x] Data preprocessing(effecient way to load/use the entire Celeb-A data onto the main memory)
 - [ ] Language Model
 - [ ] Implementing the Giant MSG-GANs on the entire LFW dataset
 - [ ] Transfer Learning
@@ -23,6 +23,14 @@ Requirement of the Data preprocessing code
 Requirements
 - [ ] Load(from pickle file,json or txt/csv ) ,preprpocess and encode 
 - [ ] Must be able to process text using both word level and sentence level embedding
-  * Word level embedding Algorithms  - [Glove](https://nlp.stanford.edu/projects/glove/ "Glove webpage"), Word2Vec, FastText
-  * Sentence level embedding Algorithms  - [Infersent](https://github.com/facebookresearch/InferSent "Infersent github page"), [Google Universal Encoder](https://tfhub.dev/google/universal-sentence-encoder/4 "TF-hub page of Universal encoder"), [Elmo](https://tfhub.dev/google/elmo/3 "TF-hub page of Elmo")
-- [ ]
+  * Word level embedding Algorithms  - 
+    - [ ] [Glove](https://nlp.stanford.edu/projects/glove/ "Glove webpage"), 
+    - [ ] Word2Vec, 
+    - [ ] FastText,
+    - [ ] Generating sentence embedding from word embedding using - 
+      - [ ] Mean of all word emb
+      - [ ] Min/Max/Mean of all the word emb
+  * Sentence level embedding Algorithms  - 
+  - [ ] [Infersent](https://github.com/facebookresearch/InferSent "Infersent github page"), 
+  - [ ] [Google Universal Encoder](https://tfhub.dev/google/universal-sentence-encoder/4 "TF-hub page of Universal encoder"),    
+  - [ ] [Elmo](https://tfhub.dev/google/elmo/3 "TF-hub page of Elmo")
