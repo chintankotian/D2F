@@ -1,9 +1,9 @@
-from emb_algos import example
+from emb_algos import example, glove_emb
 
 class Embeddings():
     def __init__(self, algo):
         # Instantiate the class of the selected algorithm
-        self.nlp_algo = example.example()
+        self.nlp_algo = algo()
         pass
 
     def load_description(self, text_path):
@@ -17,6 +17,7 @@ class Embeddings():
 
 if(__name__ == "__main__"):
     # Initialize
-    nlp = Embeddings()
+    emb_algos = {'glove':glove_emb.GloveEmbeddings, "example":example.example}
+    nlp = Embeddings(emb_algos['glove'])
     nlp.preprocess("hello")
     nlp.encode("test")
